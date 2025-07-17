@@ -24,6 +24,8 @@ public class example1 {
 
         callObj = callObj.getSuperclass();
         System.out.println("y's superclass is: "+ callObj.getSimpleName());
+
+        System.out.println(java.lang.ClassLoader.class.getClassLoader());
     }
 
 }
