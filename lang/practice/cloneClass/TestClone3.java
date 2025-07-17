@@ -1,32 +1,30 @@
 package lang.practice.cloneClass;
 
+// overriding clone() method
+// clone() must be specified as public
 
-// the class implements Cloneable interface and calls clone() using method
-
-public class TestClone implements Cloneable{
+public class TestClone3 {
     int a;
     double b;
 
-
-    TestClone cloneTest(){
+    public Object clone(){
         try{
-            return (TestClone) super.clone();
+            return super.clone();
         } catch (CloneNotSupportedException e){
-            System.out.println("Cloning not allowed.");
+            System.out.println("Cloning not allowed");
             return this;
         }
     }
 }
 
-class CloneDemo {
+class CloneDemo3 {
     public static void main(String[] args){
-        TestClone x1 = new TestClone();
-        TestClone x2;
-
+        TestClone3 x1 = new TestClone3();
+        TestClone3 x2;
         x1.a = 10;
         x1.b = 20.98;
 
-        x2 = x1.cloneTest();
+        x2 = (TestClone3) x1.clone();
         System.out.println("x1: "+ x1.a + " "+ x1.b);
         System.out.println("x2: "+ x2.a+ " "+ x2.b);
     }
