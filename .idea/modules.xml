@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Annotations/Annotations.iml" filepath="$PROJECT_DIR$/Annotations/Annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JLearnings.iml" filepath="$PROJECT_DIR$/.idea/JLearnings.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringHandling/StringHandling.iml" filepath="$PROJECT_DIR$/StringHandling/StringHandling.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/java_learning_Windows.iml" filepath="$PROJECT_DIR$/.idea/java_learning_Windows.iml" />
+>>>>>>> c0ac4c7a9df00a928c8ff625a0dfb6b58d435c08
     </modules>
   </component>
 </project>
